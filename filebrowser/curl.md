@@ -8,7 +8,7 @@ curl --location 'http://localhost:8080/api/login' \
 curl --location 'http://localhost/api/raw/download.png' \
 --header 'X-Auth: token_here'
 
-###Upload a file
+### Upload a file
 curl --location 'http://localhost/api/resources/sample.png' \
 --header 'X-Auth: token_here' \
 --header 'Content-Type: image/png' \
