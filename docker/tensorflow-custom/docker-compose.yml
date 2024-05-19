@@ -1,0 +1,14 @@
+version: "3.6"
+services:
+  tensorflow-gpu:
+    build:
+      context: .
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: "nvidia"
+              device_ids: ["0"]
+              capabilities: ["gpu"]
+    volumes:
+      - .:/workspace
