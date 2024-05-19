@@ -1,0 +1,1 @@
+In order to Docker to access the nvidia GPU, the Nvidia CUDA Toolkit needs to be installed. Ensure if using Windows WSL2 to only install the CUDA Toolkit package designed for WSL2 as installing the Ubuntu package will overwrite the driver for the gpu. Windows already installed the driver for the gpu with WSL2.
